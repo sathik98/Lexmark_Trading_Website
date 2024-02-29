@@ -13,7 +13,7 @@ import contactbanner from "../../assests/Contact/contactbanner-bg.jpg";
 const AboutUs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
   const [isContactTabClicked, setIsContactTabClicked] = useState(false);
-
+// function
   const handleTabClick = (tab) => {
     setActiveTab(tab);
     if (tab === "tab5") {
