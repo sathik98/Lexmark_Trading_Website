@@ -1,0 +1,161 @@
+.banner_main_wrapper {
+  background-image: url("../../assests/Banner/Banner_Bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  // z-index: 888;
+  height: 800px;
+  // border: 2px solid yellow;
+
+  @media only screen and (min-width: 300px) and (max-width: 575px) {
+    height: 1000px;
+  }
+
+  position: relative;
+
+  .banner_inner_wrapper {
+    height: 100%;
+    width: 100%;
+
+    .banner_content_wrap {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // border: 1px solid yellow;
+      width: 35%;
+
+      @media only screen and (min-width: 300px) and (max-width: 575px) {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        // border: 1px solid red;
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 575px) and (max-width: 600px) {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        // border: 1px solid red;
+        width: 45%;
+      }
+
+      @media only screen and (min-width: 600px) and (max-width: 1200px) {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        // border: 1px solid red;
+        width: 45%;
+      }
+
+      .text_wrap {
+        text-align: center;
+
+        p {
+          color: #fff;
+          font-size: 16px;
+        }
+        h3 {
+          font-size: 22px;
+          font-weight: 600;
+          color: #fff;
+        }
+        button {
+          // width: 100px;
+          border: none;
+          border-radius: 3px;
+          background-color: #7010e0;
+          color: #fff;
+          padding: 10px;
+        }
+      }
+    }
+    .crypto_cost_card {
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // border: 1px solid yellow;
+      width: 85%;
+      height: 25%;
+
+      @media only screen and (min-width: 300px) and (max-width: 575px) {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        // border: 1px solid red;
+      }
+      @media only screen and (min-width: 575px) and (max-width: 600px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        // border: 1px solid red;
+      }
+      @media only screen and (min-width: 600px) and (max-width: 1200px) {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        // border: 1px solid red;
+      }
+      #minimal-statistics {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+
+        .nnn {
+          padding-left: 0px;
+          padding-right: 0px;
+          .card {
+            margin-bottom: 50px;
+            height: 65%;
+            border: 1px solid #7010e0;
+            background-color: #240845;
+            color: #fff;
+            border-radius: 2px;
+            opacity: 1;
+          }
+
+          .media {
+            display: flex !important;
+            align-items: center !important;
+            .card_name {
+              padding-top: 15px;
+              .btc {
+                color: #dfc6fc;
+                font-size: 16px;
+                margin-bottom: 8px;
+              }
+              .bitcoin {
+                color: #fff;
+                font-size: 18px;
+              }
+            }
+
+            .media-body {
+              padding-top: 15px !important;
+
+              .small-value {
+                color: red;
+                font-size: 12px;
+                margin-bottom: 0px;
+              }
+
+              .high-valuse {
+                color: #fff;
+
+                font-size: 28px;
+                font-weight: 600;
+                border: none;
+                outline: none;
+                background: transparent;
+                cursor: auto;
+                font-family: roboto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

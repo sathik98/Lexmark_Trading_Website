@@ -1,0 +1,264 @@
+.aboutus_main_wrapper {
+  background-image: url("../../assests/Aboutus/aboutbanner-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  // z-index: 888;
+  height: 700px;
+  // border: 2px solid yellow;
+
+  @media only screen and (min-width: 300px) and (max-width: 575px) {
+    height: 1000px;
+  }
+  .aboutus-inner-wrapper {
+    height: 100%;
+    width: 100%;
+    .banner_content_wrap {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // border: 1px solid yellow;
+      width: 30%;
+
+      @media only screen and (min-width: 300px) and (max-width: 575px) {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        // border: 1px solid red;
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 575px) and (max-width: 600px) {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        // border: 1px solid red;
+        width: 45%;
+      }
+
+      @media only screen and (min-width: 600px) and (max-width: 1200px) {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        // border: 1px solid red;
+        width: 45%;
+      }
+
+      .text_wrap {
+        text-align: center;
+
+        p {
+          color: #fff;
+          font-size: 16px;
+        }
+        h3 {
+          font-size: 22px;
+          font-weight: 600;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .aboutus-tabs-wrap {
+    // Tabs
+    .inner-tabs {
+      background-color: #e4dded;
+
+      .subnavbar {
+        display: flex;
+        gap: 10px;
+        background-color: #e4dded;
+        padding: 10px;
+
+        @media screen and (min-width: 250px) and (max-width: 500px) {
+          display: block;
+          // padding: 20px;
+        }
+
+        .tab {
+          margin-right: 10px;
+          position: relative; /* Set the position to relative */
+
+          @media screen and (min-width: 250px) and (max-width: 500px) {
+            margin: 20px;
+          }
+        }
+
+        button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          font-size: 16px;
+          color: #000;
+          padding: 10px;
+
+          &.active {
+            font-weight: bold;
+
+            //   background: #198754;
+            border-bottom: 2px solid #7010e0;
+            padding: 10px;
+            color: #000;
+            //   border-radius: 10px;
+
+            &::after {
+              content: "";
+              display: block;
+              width: 100%;
+              // border-bottom: 3px solid #198754;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+
+              @media screen and (min-width: 250px) and (max-width: 500px) {
+                content: "";
+                display: block;
+                width: 60%;
+                // border-bottom: 3px solid #198754;
+                position: absolute;
+                bottom: 0;
+                /* width: 100px; */
+                left: 20%;
+              }
+            }
+          }
+        }
+
+        button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          font-size: 17px;
+
+          &.active {
+            font-weight: bold;
+            font-size: 17px;
+          }
+        }
+      }
+
+      .tab-content {
+        margin-top: 10px;
+
+        .heading {
+          text-align: left;
+          margin-bottom: 20px;
+          background-color: white;
+          p {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #9a89ae;
+          }
+          .topic {
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 45px;
+            color: #7010e0;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+        .card-container {
+          .row {
+            .mini-card {
+              .card {
+                background-color: #f8f4ff;
+                border-radius: 8px;
+                width: 80%;
+
+                .media {
+                  display: flex;
+                  padding: 10px;
+                  justify-content: space-evenly;
+                  .icon {
+                    // height: 100%;
+                    // width: 100%;
+                    margin: 20px;
+                    // border: 1px solid;
+                    img {
+                      height: 35px;
+                      width: 35px;
+                      border-radius: 50%;
+                    }
+                  }
+                  .details {
+                    text-align: left;
+
+                    h3 {
+                      color: #4e268d;
+                      font-size: 22px;
+                      font-weight: 600;
+
+                      margin-top: 10px;
+                    }
+                    p {
+                      color: #3d2a53;
+                      font-size: 16px;
+                      margin-bottom: 0px;
+                      margin-top: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .box-one {
+          background: #fff;
+          border-radius: 10px;
+          padding: 70px;
+          padding-bottom: 0;
+
+          @media only screen and (min-width: 300px) and (max-width: 575px) {
+            padding: 10px;
+          }
+
+          .box-one-inner {
+            .inner-box-content {
+              //   font-family: Lato;
+              font-size: 16px;
+              font-weight: 400;
+              // line-height: 30px;
+              text-align: left;
+            }
+
+            .address {
+              h3 {
+                color: #4e268d;
+                font-size: 28px;
+                font-weight: 600;
+              }
+              p {
+                color: #3d2a53;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .box-one-img {
+          //   border: 1px solid;
+          .img-div {
+            img {
+              width: 100%;
+              padding: 30px;
+              height: 523px;
+              border-radius: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.aboutus_main_wrapper.contact-tab-clicked {
+  background-image: url("../../assests/Contact/contactbanner-bg.jpg");
+}

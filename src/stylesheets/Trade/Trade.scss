@@ -1,0 +1,172 @@
+.trade_main_wrappper {
+  background-image: url("../../assests/Trade/trade-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 999;
+  height: 700px;
+  position: relative;
+
+  @media only screen and (min-width: 280px) and (max-width: 500px) {
+    height: 1500px;
+  }
+  @media only screen and (min-width: 500px) and (max-width: 768px) {
+    height: 1500px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    height: 1500px;
+  }
+
+  .trade_inner_wrapper {
+    .heading {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      text-align: left;
+      margin: 65px;
+      margin-bottom: 30px;
+      margin: 0 auto;
+
+      @media only screen and (min-width: 280px) and (max-width: 500px) {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: 80%;
+      }
+
+      .lexmark {
+        color: #b998e0;
+      }
+
+      .topic {
+        color: #decaff;
+        font-size: 32px;
+        font-weight: 800;
+        width: 50%;
+
+        @media only screen and (min-width: 280px) and (max-width: 500px) {
+          font-size: 28px;
+        }
+      }
+    }
+
+    .card-container {
+      position: absolute;
+      top: 63%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 75%;
+
+      @media only screen and (min-width: 500px) and (max-width: 1000px) {
+        position: absolute;
+        top: 70%;
+      }
+
+      .card-inner-conat {
+        display: flex;
+        justify-content: space-evenly;
+
+        @media only screen and (min-width: 200px) and (max-width: 1000px) {
+          display: block;
+        }
+
+        .card {
+          background-color: transparent;
+          width: 100%;
+          //   border: 1px solid yellow;
+
+          .card-inner {
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative; /* added position relative */
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 17%;
+              left: 90%;
+              transform: translateX(-50%);
+              width: 95%;
+              height: 2px;
+              background-color: white;
+              z-index: -1;
+
+              @media only screen and (min-width: 280px) and (max-width: 500px) {
+                // position: absolute;
+                // top: 70%;
+                // width: 100%;
+                // z-index: -1;
+                // left: 50%;
+                // transform: translateX(-50%) rotate(90deg); // Rotate vertically
+                display: none;
+              }
+
+              @media only screen and (min-width: 500px) and (max-width: 768px) {
+                // position: absolute;
+                // top: 80%;
+                // width: 43%;
+                // z-index: -1;
+                // left: 50%;
+                // transform: translateX(-50%) rotate(90deg); // Rotate vertically
+                display: none;
+              }
+
+              @media only screen and (min-width: 768px) and (max-width: 1000px) {
+                // position: absolute;
+                // top: 80%;
+                // width: 30%;
+                // z-index: -1;
+                // left: 50%;
+                // transform: translateX(-50%) rotate(90deg); // Rotate vertically
+                display: none;
+              }
+
+              @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+                position: absolute;
+                top: 12%;
+              }
+            }
+
+            img {
+              height: 100px;
+              width: 100px;
+              margin: 0 auto;
+            }
+
+            .card-body {
+              height: 100%;
+              width: 70%;
+              margin: 0 auto;
+              text-align: left;
+              margin-right: 0px;
+
+              @media only screen and (min-width: 300px) and (max-width: 1000px) {
+                width: 100%;
+              }
+
+              h3 {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+              }
+
+              span {
+                color: #fff;
+                font-size: 12px;
+              }
+            }
+          }
+
+          &:last-child .card-inner::after {
+            display: none !important; /* Hide the line for the first card */
+          }
+        }
+      }
+    }
+  }
+}

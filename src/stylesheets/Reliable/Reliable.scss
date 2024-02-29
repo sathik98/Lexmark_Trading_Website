@@ -1,0 +1,214 @@
+.reliable-outer-wrapper {
+  background-image: url("../../assests/Reliable/relaible-bg.jpg ");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 999;
+  height: 1000px;
+  position: relative;
+
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    height: 1300px;
+  }
+
+  @media only screen and (min-width: 500px) and (max-width: 768px) {
+    height: 2200px;
+  }
+
+  .reliable-inner-wrapper {
+    .heading {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      text-align: right;
+      margin: 65px;
+      margin-bottom: 30px;
+      margin: 0 auto;
+
+      @media only screen and (min-width: 280px) and (max-width: 500px) {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: 80%;
+
+        margin-top: 40px;
+      }
+
+      @media only screen and (min-width: 500px) and (max-width: 768px) {
+        position: absolute;
+        top: 7%;
+        left: 50%;
+        width: 80%;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1200px) {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: 80%;
+      }
+
+      .lexmark {
+        color: #b998e0;
+      }
+
+      .topic {
+        color: #decaff;
+        font-size: 32px;
+        font-weight: 800;
+        // width: 50%;
+        text-align: right;
+        @media only screen and (min-width: 280px) and (max-width: 500px) {
+          font-size: 28px;
+        }
+      }
+    }
+
+    .card-container {
+      position: absolute;
+      top: 32%;
+      left: 6%;
+      @media only screen and (min-width: 500px) and (max-width: 768px) {
+        position: absolute;
+        top: 13%;
+        left: 6%;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1200px) {
+        position: absolute;
+        top: 20%;
+        left: 6%;
+      }
+      .row {
+        .custom-column {
+          .card {
+            width: 330px;
+            height: 280px;
+            border: none;
+
+            @media only screen and (min-width: 300px) and (max-width: 508px) {
+              width: 90%;
+              height: 280px;
+            }
+
+            .user {
+              background-image: url("../../assests/Reliable/user.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              .inner-text {
+                margin-top: 100px;
+                h3 {
+                  color: #fbd344;
+                  font-size: 22px;
+                  font-size: 600;
+                  text-align: left;
+                }
+                p {
+                  color: #fff;
+                  text-align: left;
+                  font-size: 15px;
+                }
+              }
+            }
+            .cost {
+              background-image: url("../../assests/Reliable/cost.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              .inner-text {
+                margin-top: 100px;
+                h3 {
+                  color: #fbd344;
+                  font-size: 22px;
+                  font-size: 600;
+                  text-align: left;
+                }
+                p {
+                  color: #fff;
+                  text-align: left;
+                  font-size: 15px;
+                }
+              }
+            }
+            .risk {
+              background-image: url("../../assests/Reliable/risk.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              .inner-text {
+                margin-top: 100px;
+                h3 {
+                  color: #fbd344;
+                  font-size: 22px;
+                  font-size: 600;
+                  text-align: left;
+                }
+                p {
+                  color: #fff;
+                  text-align: left;
+                  font-size: 15px;
+                }
+              }
+            }
+            .liquidity {
+              background-image: url("../../assests/Reliable/liquidity.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              .inner-text {
+                margin-top: 100px;
+                h3 {
+                  color: #fbd344;
+                  font-size: 22px;
+                  font-size: 600;
+                  text-align: left;
+                }
+                p {
+                  color: #fff;
+                  text-align: left;
+                  font-size: 15px;
+                }
+              }
+            }
+            .topclass {
+              background-image: url("../../assests/Reliable/topclass.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              .inner-text {
+                margin-top: 100px;
+                h3 {
+                  color: #fbd344;
+                  font-size: 22px;
+                  font-size: 600;
+                  text-align: left;
+                }
+                p {
+                  color: #fff;
+                  text-align: left;
+                  font-size: 15px;
+                }
+              }
+            }
+            .aml {
+              background-image: url("../../assests/Reliable/aml.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+
+              .inner-text {
+                margin-top: 100px;
+                h3 {
+                  color: #fbd344;
+                  font-size: 22px;
+                  font-size: 600;
+                  text-align: left;
+                }
+                p {
+                  color: #fff;
+                  text-align: left;
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
